@@ -29,11 +29,11 @@ static void proc_command_line_init(void) {
 static int cmdline_proc_show(struct seq_file *m, void *v)
 {
 #ifdef CONFIG_INITRAMFS_IGNORE_SKIP_FLAG
-	seq_puts(m, proc_command_line);
+	seq_printf(m, "%s\n", proc_command_line);
 #else
-	seq_puts(m, saved_command_line);
+	seq_printf(m, "%s\n", saved_command_line);
 #endif
-	seq_putc(m, '\n'); 
+	return 0;
 }
 
 static int cmdline_proc_open(struct inode *inode, struct file *file)
