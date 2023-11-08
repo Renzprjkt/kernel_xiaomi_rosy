@@ -12,7 +12,7 @@ WHAT IS LINUX?
 
   It has all the features you would expect in a modern fully-fledged Unix,
   including true multitasking, virtual memory, shared libraries, demand
-  loading, shared copy-on-write executables, proper memory management,
+  loading, shared copy-on-wcopy-on-writecopy-on-wcopy-on-writeriterite executables, proper memory management,
   and multistack networking including IPv4 and IPv6.
 
   It is distributed under the GNU General Public License - see the
