@@ -55,7 +55,7 @@ static int __init proc_cmdline_init(void)
 	proc_command_line_init();
 #endif
 
-	proc_create_single("cmdline", 0, NULL, cmdline_proc_show);
+	proc_create("cmdline", 0, NULL, &cmdline_proc_fops);
 	return 0;
 }
 fs_initcall(proc_cmdline_init);
